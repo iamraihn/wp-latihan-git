@@ -1,0 +1,73 @@
+CSS untuk body
+body {
+    background: #eee;
+    color: #333;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/* CSS untuk wrapper */
+#wrapper {
+    background: #fff;
+    width: 1100px;
+    margin: 20px auto;
+}
+
+/* CSS untuk header */
+#wrapper header {
+    background: #232323;
+    padding: 20px;
+}
+
+/* CSS untuk hgroup di dalam header */
+#wrapper header hgroup {
+    float: left;
+    color: #fff;
+}
+
+/* CSS untuk navigasi di dalam header */
+#wrapper header nav {
+    float: right;
+    margin-top: 50px;
+}
+
+/* CSS untuk ul di dalam navigasi */
+#wrapper header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS untuk li di dalam ul di dalam navigasi */
+#wrapper header nav ul li {
+    float: left;
+    list-style: none;
+}
+
+/* CSS untuk a di dalam li di dalam ul di dalam navigasi */
+#wrapper header nav ul li a {
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS untuk clear */
+.clear {
+    clear: both;
+}
+
+/* CSS untuk footer */
+footer {
+    background: #232323;
+    padding: 20px;
+}
+
+/* CSS untuk link di dalam footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS untuk section */
+section {
+    padding: 20px;
+}
