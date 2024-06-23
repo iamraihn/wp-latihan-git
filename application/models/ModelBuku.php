@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class ModelBuku extends CI_Model
 {
-    // Manajemen buku
+    //manajemen buku
     public function getBuku()
     {
         return $this->db->get('buku');
@@ -39,7 +39,7 @@ class ModelBuku extends CI_Model
         return $this->db->get()->row($field);
     }
 
-    // Manajemen kategori
+    //manajemen kategori
     public function getKategori()
     {
         return $this->db->get('kategori');
@@ -65,13 +65,18 @@ class ModelBuku extends CI_Model
         $this->db->update('kategori', $data, $where);
     }
 
-    // Join
+    //join
     public function joinKategoriBuku($where)
     {
-        $this->db->select('buku.id_kategori, kategori.kategori');
         $this->db->from('buku');
         $this->db->join('kategori', 'kategori.id = buku.id_kategori');
         $this->db->where($where);
         return $this->db->get();
+    }
+
+    public function getLimitBuku()
+    {
+        $this->db->limit(5);
+        return $this->db->get('buku');
     }
 }
